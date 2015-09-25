@@ -29,8 +29,6 @@ git clone https://github.com/mikecarr/minoposd
 
 ## Configuring
 
-
-
 edit OSD_Config.h
 
 ```
@@ -51,17 +49,19 @@ FlightBatt.h:
 ```
 
 FlighBatt.ino:
+```
 change analogReference from Internal to Default:
 
     analogReference(DEFAULT);
-
+```
 AnalogRSSI.h:
-
+```
 #define RSSI_PIN            1           // A1 is pin 24
 #define REF_VOLTAGE            5            // DEFAULT: a built-in reference, equal to 5 volts on the ATmega328
-
+```
 AnalogRSSI.ino:
+```
 change analogReference from Internal to Default:
     analogReference(DEFAULT);
-
+```
 
